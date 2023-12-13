@@ -61,17 +61,17 @@ public class HelloWorld {
 
 //        int three = (int) "three";
 
-        int x = 4;
-        x = x + 5;
+//        int x = 4;
+//        x = x + 5;
 
         int x = 3;
         int y = 4;
         y = y * x; //    y*=x  Rewrite the following expressions using the relevant shorthand assignment
 
-        int x = 10;
-        int y = 2;
-        x = x / y;  //    x/=y  Rewrite the following expressions using the relevant shorthand assignment
-        y = y - x; //     y-=x  Rewrite the following expressions using the relevant shorthand assignment
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;  //    x/=y  Rewrite the following expressions using the relevant shorthand assignment
+//        y = y - x; //     y-=x  Rewrite the following expressions using the relevant shorthand assignment
 
         System.out.println(x);
         System.out.println(y);
