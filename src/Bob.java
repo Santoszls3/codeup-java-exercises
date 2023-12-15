@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Bob {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //2. Create a class named Bob with a main method for the following exercise.
         //
         //Bob is a lackadaisical teenager. In conversation, his responses are very limited.
@@ -15,20 +15,25 @@ public class Bob {
         //Use the Scanner class to get input from the user. Import java.util.Scanner at the beginning of your file
         Scanner scanner = new Scanner(System.in);
         System.out.println("Say something to Bob:");
-        String userInput = scanner.nextLine();
+        while (true) {
+            String userInput = scanner.nextLine();
 
-        //Implement Bob's Responses:
-        //Now, you can implement the logic for Bob's responses based on the provided rules. Use if statements to
-        // check the conditions and print the appropriate response.
-        if (userInput.endsWith("?")) {
-            System.out.println("Sure.");
-        } else if (userInput.endsWith("!")) {
-            System.out.println("Whoa, chill out!");
-        } else if (userInput.trim().isEmpty()) {
-            System.out.println("Fine. Be that way!");
-        } else {
-            System.out.println("Whatever.");
+            //Implement Bob's Responses:
+            //Now, you can implement the logic for Bob's responses based on the provided rules. Use if statements to
+            // check the conditions and print the appropriate response.
+            if (userInput.endsWith("?")) {
+                System.out.println("Sure.");
+            } else if (userInput.endsWith("!")) {
+                System.out.println("Whoa, chill out!");
+            } else if (userInput.trim().isEmpty()) {
+                System.out.println("Fine. Be that way!");
+            } else if (userInput.equals("Banana")){
+                System.out.println("later, loser...");
+                break;
+            } else {
+                System.out.println("Whatever...");
+            }
+
         }
-
     }
 }
